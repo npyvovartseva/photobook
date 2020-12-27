@@ -1,0 +1,267 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('./utils/backgrounds/back7.jpg');
+  background-repeat: repeat;
+  color: #fff;
+  font-family: cursive;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-header {
+  font-style: italic;
+  font-family: cursive;
+  justify-content: center;
+  background: #7ac8df;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+.main-menu-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main-menu {
+  display: grid;
+  grid-template-columns: repeat(5, 3fr);
+  grid-gap: 1em;
+  margin-top: 20px;
+}
+
+.menu-item {
+  cursor: pointer;
+  position: relative;
+  height: 200px;
+  width: 180px;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 100%;
+  border: 4px #fff solid;
+  border-radius: 2px;
+}
+
+.menu-item-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0 0 0 / 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease-in;
+  opacity: 0;
+}
+
+.menu-item-info.blocked {
+  opacity: 0.7;
+}
+
+.menu-item:hover .menu-item-info {
+  opacity: 1;
+}
+
+.month-title {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 3em;
+}
+
+.month-title-image, .month-title-description {
+  flex-basis: 50%;
+  height: 75vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.month-title-image img {
+  height: 100%;
+}
+
+.month-title-description {
+  color: #c0a078;
+}
+
+.month-title-description .month-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  background: #ffffffed;
+  border: 20px solid black;
+  border-image: url('./utils/backgrounds/border2.png') 30;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(244, 206, 158, 1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background: #c0a078;
+  background: linear-gradient(90deg, rgba(170, 143, 110, 1) 0%, rgba(244, 206, 158, 1) 35%, rgba(184, 156, 120, 1) 100%);
+}
+
+.month-title-description .month-desc .month-desc-item {
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+}
+
+.month-title-description h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.month-desc-footer {
+  text-align: center;
+}
+
+.month-title-description button {
+  border-radius: 5px;
+  background: rgb(170, 143, 110);
+  background: linear-gradient(90deg, rgba(170, 143, 110, 1) 0%, rgba(244, 206, 158, 1) 35%, rgba(184, 156, 120, 1) 100%);
+  padding: 1em;
+  color: #FFF;
+  font-size: 1.1em;
+  margin-top: 2.5em;
+  cursor: pointer;
+}
+
+.month-desc-item {
+  font-size: 1.1em;
+  line-height: 1.5em;
+  padding: 1em;
+  text-align: justify;
+}
+
+.slider-nophotos {
+  background: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.slider-footer {
+  background: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slider-footer button {
+  border-radius: 5px;
+  background: #7ac8df;
+  padding: 1em;
+  color: #FFF;
+  font-size: 1.1em;
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em;
+  height: 100vh;
+  background: black;
+}
+
+.slide-item {
+  padding: 1em;
+  overflow: hidden;
+}
+
+.size3x1 {
+  flex-basis: 33%;
+}
+
+.size1x1 {
+  flex-basis: 100%;
+}
+
+.slide-item img {
+  width: 100%;
+}
+
+.slide-item video {
+  width: 100%;
+  height: 100%;
+}
+
+video::-webkit-media-controls-volume-slider {
+  height: 12px;
+  border-radius: 5px;
+  min-width: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-menu {
+    grid-template-columns: repeat(3, 5fr);
+  }
+  .month-title-image, .month-title-description {
+    flex-basis: 100%;
+  }
+  .month-title-description h2 {
+    margin: 0;
+    font-size: 1.3em;
+  }
+  .month-desc-item {
+    font-size: 1em;
+    line-height: 1.3em;
+    padding: .5em;
+  }
+  .month-title-description button {
+    margin-top: 1.1em;
+    font-size: 1em;
+    padding: 0.5em;
+  }
+  .month-title-image {
+    height: 70vh;
+  }
+  .month-title-description {
+    height: auto;
+  }
+  .month-title-description .month-desc {
+    width: 100%;
+  }
+  .month-desc-item {
+    overflow-y: hidden !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main-menu {
+    grid-template-columns: repeat(2, 8fr);
+  }
+  .month-title-image {
+    height: 33vh;
+  }
+  .slide {
+    height: 33vh;
+  }
+}
