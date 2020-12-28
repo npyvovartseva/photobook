@@ -5,7 +5,7 @@ import MonthDesc from '../elements/MonthDesc';
 
 const MonthTitle = (props) => {
     const { id } = useParams();
-    const findTitles = () => props.titles.find(title => title.id == id);
+    const findTitles = () => props.titles.find(title => title.id*1 === id*1);
 
     return (
         <div className="month-title">
