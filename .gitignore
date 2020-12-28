@@ -19,7 +19,6 @@
 .env.production.local
 
 # media
-/src/utils/images
 
 npm-debug.log*
 yarn-debug.log*

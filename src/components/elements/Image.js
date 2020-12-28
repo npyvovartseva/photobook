@@ -15,7 +15,7 @@ class Image extends Component {
     };
 
     componentDidMount() {
-        if (!/https/.test(this.props.filename)) {
+        if (/.jpg|.jpeg|.gif|.mp4/.test(this.props.filename)) {
             this.props.filename && this.loadImage(this.props.filename);
         }
 
@@ -31,7 +31,7 @@ class Image extends Component {
                     <video controls autoPlay loop muted>
                         <source src={image} type="video/mp4" />
                     </video>}
-                {!image && <img src={this.props.filename} alt="" />}
+                
             </>
         );
     }

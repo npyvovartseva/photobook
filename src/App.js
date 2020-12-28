@@ -224,6 +224,7 @@ class App extends Component {
       <Slide3x1 key='4' images={['m6/20201124_175747.mp4', 'm6/20201204_181041.mp4', 'm6/WhatsApp Video 2020-12-14 at 14.25.05.mp4']} />
     ]
   };
+  
 
   componentDidMount() {
     AOS.init({
