@@ -6,6 +6,7 @@ class Image extends Component {
     };
 
     loadImage = imageName => {
+
         import(`../../utils/images/${imageName}`).then(image => {
             this.setState({
                 image: image.default
@@ -14,7 +15,10 @@ class Image extends Component {
     };
 
     componentDidMount() {
-        this.props.filename&&this.loadImage(this.props.filename);
+        if (!/https/.test(this.props.filename)) {
+            this.props.filename && this.loadImage(this.props.filename);
+        }
+
     }
 
     render() {
@@ -27,6 +31,7 @@ class Image extends Component {
                     <video controls autoPlay loop muted>
                         <source src={image} type="video/mp4" />
                     </video>}
+                {!image && <img src={this.props.filename} alt="" />}
             </>
         );
     }
