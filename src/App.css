@@ -263,5 +263,9 @@ video::-webkit-media-controls-volume-slider {
   }
   .slide {
     height: 33vh;
+    padding:.5em;
+  }
+  .slide-item{
+    padding:0;
   }
 }
