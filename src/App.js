@@ -127,8 +127,13 @@ class App extends Component {
     Не..Телефон не дам. Не дам, я сказала. Уговорил, если доползешь - бери. 
     Эй, перекатами - не честно! Наше любимое вертлявое сокровище:)`}]
     },
-    { id: 7, image: '7mduck.jpeg', name: '7 месяцев', description: [{ title: 'Бубух', description: '' }] },
-    { id: 8, image: 'duck.jpeg', name: '8 месяцев', description: [{ title: '', description: '' }] },
+    { id: 7, image: '7mduck.jpeg', name: '7 месяцев', description: [{ title: 'Бубух', description: 
+    `Радость моя, как же ты вырос. Фонари тебя больше не восхищают. 
+    Ты серьезно увлекся баскетболом. И немного девочками. Ты совсем отказываешься лежать, 
+    но вполне уверенно сидишь. Ты кушаешь с ложечки и пылесосишь по нашим с папой тарелкам.
+    Радуешься сказкам. Должна заметить, что ты прекрасная репка, и восхитительные домики всех трех поросят. 
+    А еще ты разговариваешь! “Мамамам, бамбамбам, няняняня...  ага?” - конечно, Эли, само собой. ` }] },
+    { id: 8, image: '8mduck.jpeg', name: '8 месяцев', description: [{ title: 'Вертлявый поп', description: '' }] },
     { id: 9, image: 'duck.jpeg', name: '9 месяцев', description: [{ title: '', description: '' }] },
     { id: 10, image: 'duck.jpeg', name: '10 месяцев', description: [{ title: '', description: '' }] },
     { id: 11, image: 'duck.jpeg', name: '11 месяцев', description: [{ title: '', description: '' }] },
@@ -222,6 +227,18 @@ class App extends Component {
       <Slide1x1 key='2' images={['m6/WhatsApp Video 2020-11-30 at 10.02.38.mp4']} />,
       <Slide3x1 key='3' images={['m6/20201217_160331.jpg', 'm6/WhatsApp Video 2020-12-17 at 16.04.32.mp4', 'm6/20201217_160335_Burst01.jpg']} />,
       <Slide3x1 key='4' images={['m6/20201124_175747.mp4', 'm6/20201204_181041.mp4', 'm6/WhatsApp Video 2020-12-14 at 14.25.05.mp4']} />
+    ],
+    7:[
+      <Slide3x1 key='1' images={['m7/20210110_160537.jpg', 'm7/20210110_160540.jpg', 'm7/20210110_160543.jpg']} />,
+      <Slide3x1 key='2' images={['m7/20210110_160628.jpg', 'm7/20210110_160720.mp4', 'm7/20210110_160706.jpg']} />,
+      <Slide3x1 key='3' images={['m7/20201226_090433.jpg', 'm7/20210120_145755.jpg', 'm7/20210120_113934.jpg']} />,
+      <Slide3x1 key='4' images={['m7/20201227_104608.jpg', 'm7/20201227_183157.jpg', 'm7/20201227_104610.mp4']} />,
+      <Slide3x1 key='5' images={['m7/20210121_192514.jpg', 'm7/20210121_192639.jpg', 'm7/20210121_192516.jpg']} />,
+      <Slide1x1 key='8' images={['m7/20201225_025435.jpg']} />,
+      <Slide3x1 key='7' images={['m7/20210121_133639.mp4', 'm7/20210121_133725.jpg', 'm7/20210121_133728.mp4']} />,
+      <Slide1x1 key='9' images={['m7/IMG-20201227-WA0002.jpg']} />,
+      <Slide1x1 key='10' images={['m7/VID-20201231-WA0000.mp4']} />,
+
     ]
   };
   
